@@ -1,0 +1,5 @@
+module FFmpegMain[extern_c] {
+    umbrella header "FFmpegMain.h"
+    
+    export *
+}
