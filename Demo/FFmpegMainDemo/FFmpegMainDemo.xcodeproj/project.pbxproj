@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F41F2C91E9FCFF3005B69CB /* FFmpegMain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F41F2C81E9FCFF3005B69CB /* FFmpegMain.framework */; };
+		0F41F2CA1E9FD00A005B69CB /* FFmpegMain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F41F2C81E9FCFF3005B69CB /* FFmpegMain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0FA2A1ED1E655E4A00F1617D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA2A1EC1E655E4A00F1617D /* AppDelegate.swift */; };
 		0FA2A1EF1E655E4A00F1617D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA2A1EE1E655E4A00F1617D /* ViewController.swift */; };
 		0FA2A1F21E655E4A00F1617D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA2A1F01E655E4A00F1617D /* Main.storyboard */; };
 		0FA2A1F41E655E4A00F1617D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FA2A1F31E655E4A00F1617D /* Assets.xcassets */; };
 		0FA2A1F71E655E4A00F1617D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA2A1F51E655E4A00F1617D /* LaunchScreen.storyboard */; };
-		0FA2A2091E65678000F1617D /* FFmpegMain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA2A2081E65678000F1617D /* FFmpegMain.framework */; };
-		0FA2A20E1E6568AF00F1617D /* FFmpegMain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA2A20D1E6568AF00F1617D /* FFmpegMain.framework */; };
-		0FA2A20F1E6568AF00F1617D /* FFmpegMain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA2A20D1E6568AF00F1617D /* FFmpegMain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0FE82F3D1E6F020A003B0754 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0FE82F3C1E6F020A003B0754 /* test.mp4 */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0FA2A20F1E6568AF00F1617D /* FFmpegMain.framework in Embed Frameworks */,
+				0F41F2CA1E9FD00A005B69CB /* FFmpegMain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F41F2C81E9FCFF3005B69CB /* FFmpegMain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FFmpegMain.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/FFmpegMainDemo-fksaldxcrprxnehbwggxlyslwvxz/Build/Products/Debug-iphoneos/FFmpegMain.framework"; sourceTree = "<group>"; };
 		0FA2A1E91E655E4A00F1617D /* FFmpegMainDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpegMainDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA2A1EC1E655E4A00F1617D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FA2A1EE1E655E4A00F1617D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,8 +40,6 @@
 		0FA2A1F31E655E4A00F1617D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FA2A1F61E655E4A00F1617D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FA2A1F81E655E4A00F1617D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0FA2A2081E65678000F1617D /* FFmpegMain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FFmpegMain.framework; sourceTree = "<group>"; };
-		0FA2A20D1E6568AF00F1617D /* FFmpegMain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FFmpegMain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE82F3C1E6F020A003B0754 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.mp4; path = ../../test.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,8 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FA2A20E1E6568AF00F1617D /* FFmpegMain.framework in Frameworks */,
-				0FA2A2091E65678000F1617D /* FFmpegMain.framework in Frameworks */,
+				0F41F2C91E9FCFF3005B69CB /* FFmpegMain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				0FE82F3C1E6F020A003B0754 /* test.mp4 */,
-				0FA2A20D1E6568AF00F1617D /* FFmpegMain.framework */,
 				0FA2A1EB1E655E4A00F1617D /* FFmpegMainDemo */,
 				0FA2A1EA1E655E4A00F1617D /* Products */,
 				0FA2A1FE1E655EA400F1617D /* Frameworks */,
@@ -80,7 +76,6 @@
 		0FA2A1EB1E655E4A00F1617D /* FFmpegMainDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0FA2A2081E65678000F1617D /* FFmpegMain.framework */,
 				0FA2A1EC1E655E4A00F1617D /* AppDelegate.swift */,
 				0FA2A1EE1E655E4A00F1617D /* ViewController.swift */,
 				0FA2A1F01E655E4A00F1617D /* Main.storyboard */,
@@ -94,6 +89,7 @@
 		0FA2A1FE1E655EA400F1617D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F41F2C81E9FCFF3005B69CB /* FFmpegMain.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -295,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = G5YJVZL9SU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

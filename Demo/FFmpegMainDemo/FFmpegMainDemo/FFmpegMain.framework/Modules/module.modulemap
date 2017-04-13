@@ -1,6 +1,0 @@
-framework module FFmpegMain {
-  umbrella header "FFmpegMain.h"
-
-  export *
-  module * { export * }
-}
