@@ -21,7 +21,6 @@ video to gif example
         let inputFile = (documentsDirectory as NSString).appendingPathComponent("test.mp4")
         let outputFile = (documentsDirectory as NSString).appendingPathComponent("test_QualityHigh.gif")
         FFmpegGifUtil.video(inputFile, toGif: outputFile)
-        FFmpegCMD.cmdprocess(cmdArray)
     }
 
 
