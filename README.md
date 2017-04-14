@@ -15,7 +15,9 @@ FFmpegCMD.cmdprocess(cmdArray)
 
 video to gif example 
 
+
 func testQualityHigh() {
+
     let documentsDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
     
     let inputFile = (documentsDirectory as NSString).appendingPathComponent("test.mp4")
