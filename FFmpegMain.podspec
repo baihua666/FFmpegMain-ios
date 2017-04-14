@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
 
-  s.source_files = 'Sources/*.{h,m}', 'Sources/**/*.{h,m,lib}'
+  s.source_files = 'Demo/**/*.swift'
 end
