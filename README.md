@@ -1,5 +1,7 @@
 # FFmpegMain-ios
 
+change ffmpeg cmd code to interface for iso, use ffmpeg as a cmd tool.
+
 cmd example 
 
 
