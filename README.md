@@ -2,6 +2,7 @@
 
 change ffmpeg cmd code to interface for iso, use ffmpeg as a cmd tool.
 ffmpeg version 3.2
+add custom configure mp4 to gif reduce lib file size
 
 cmd example 
 

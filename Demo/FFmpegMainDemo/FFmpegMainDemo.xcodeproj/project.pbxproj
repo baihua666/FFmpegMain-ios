@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		0F41F2C91E9FCFF3005B69CB /* FFmpegMain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F41F2C81E9FCFF3005B69CB /* FFmpegMain.framework */; };
 		0F41F2CA1E9FD00A005B69CB /* FFmpegMain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F41F2C81E9FCFF3005B69CB /* FFmpegMain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F59C3111F79F3520072EC90 /* Files in Resources */ = {isa = PBXBuildFile; fileRef = 0F59C3101F79F3520072EC90 /* Files */; };
 		0FA2A1ED1E655E4A00F1617D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA2A1EC1E655E4A00F1617D /* AppDelegate.swift */; };
 		0FA2A1EF1E655E4A00F1617D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA2A1EE1E655E4A00F1617D /* ViewController.swift */; };
 		0FA2A1F21E655E4A00F1617D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA2A1F01E655E4A00F1617D /* Main.storyboard */; };
 		0FA2A1F41E655E4A00F1617D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FA2A1F31E655E4A00F1617D /* Assets.xcassets */; };
 		0FA2A1F71E655E4A00F1617D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA2A1F51E655E4A00F1617D /* LaunchScreen.storyboard */; };
-		0FE82F3D1E6F020A003B0754 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0FE82F3C1E6F020A003B0754 /* test.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		0F41F2C81E9FCFF3005B69CB /* FFmpegMain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FFmpegMain.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/FFmpegMainDemo-fksaldxcrprxnehbwggxlyslwvxz/Build/Products/Debug-iphoneos/FFmpegMain.framework"; sourceTree = "<group>"; };
+		0F59C3101F79F3520072EC90 /* Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Files; sourceTree = "<group>"; };
 		0FA2A1E91E655E4A00F1617D /* FFmpegMainDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFmpegMainDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA2A1EC1E655E4A00F1617D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FA2A1EE1E655E4A00F1617D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +41,6 @@
 		0FA2A1F31E655E4A00F1617D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FA2A1F61E655E4A00F1617D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FA2A1F81E655E4A00F1617D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0FE82F3C1E6F020A003B0754 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.mp4; path = ../../test.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,6 @@
 		0FA2A1E01E655E4A00F1617D = {
 			isa = PBXGroup;
 			children = (
-				0FE82F3C1E6F020A003B0754 /* test.mp4 */,
 				0FA2A1EB1E655E4A00F1617D /* FFmpegMainDemo */,
 				0FA2A1EA1E655E4A00F1617D /* Products */,
 				0FA2A1FE1E655EA400F1617D /* Frameworks */,
@@ -76,6 +75,7 @@
 		0FA2A1EB1E655E4A00F1617D /* FFmpegMainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0F59C3101F79F3520072EC90 /* Files */,
 				0FA2A1EC1E655E4A00F1617D /* AppDelegate.swift */,
 				0FA2A1EE1E655E4A00F1617D /* ViewController.swift */,
 				0FA2A1F01E655E4A00F1617D /* Main.storyboard */,
@@ -155,10 +155,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F59C3111F79F3520072EC90 /* Files in Resources */,
 				0FA2A1F71E655E4A00F1617D /* LaunchScreen.storyboard in Resources */,
 				0FA2A1F41E655E4A00F1617D /* Assets.xcassets in Resources */,
 				0FA2A1F21E655E4A00F1617D /* Main.storyboard in Resources */,
-				0FE82F3D1E6F020A003B0754 /* test.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
