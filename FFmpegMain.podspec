@@ -24,8 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  s.description  = "change ffmpeg cmd code to interface for iso, use ffmpeg as a cmd tool. ffmpeg version 3.2 add custom configure mp4 to gif reduce lib file size"
 
   s.homepage     = 'https://github.com/abc19abc91/FFmpegMain-ios'
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -89,8 +88,10 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
+# ,  'Sources/**/*.{h,m,lib}'
+  s.xcconfig = { 'USER_HEADER_SEARCH_PATHS' => '"${PROJECT_DIR}/.."/**' }
 
-  s.source_files = 'Sources/*.{h,m}', 'Sources/**/*.{h,m,lib}'
+  s.source_files = 'Sources/*.{h,m}','Sources/**/*.{h,m,c,lib}'
 
   # s.exclude_files = "Classes/Exclude"
 
