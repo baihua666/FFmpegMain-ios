@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F64E8D11FBD6A5600842B9B /* libpostproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F64E8D01FBD6A5600842B9B /* libpostproc.a */; };
+		0F64E8D81FBD6DC000842B9B /* x264_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F64E8D41FBD6DC000842B9B /* x264_config.h */; };
+		0F64E8D91FBD6DC000842B9B /* x264.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F64E8D51FBD6DC000842B9B /* x264.h */; };
+		0F64E8DA1FBD6DC000842B9B /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F64E8D71FBD6DC000842B9B /* libx264.a */; };
 		0FA2A0981E6538A500F1617D /* FFmpegMain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FA2A0961E6538A500F1617D /* FFmpegMain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0FA2A0991E6538A500F1617D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FA2A0971E6538A500F1617D /* Info.plist */; };
 		0FA2A11E1E6539E500F1617D /* avcodec.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FA2A09D1E6539E500F1617D /* avcodec.h */; };
@@ -147,6 +151,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F64E8D01FBD6A5600842B9B /* libpostproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpostproc.a; sourceTree = "<group>"; };
+		0F64E8D41FBD6DC000842B9B /* x264_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x264_config.h; sourceTree = "<group>"; };
+		0F64E8D51FBD6DC000842B9B /* x264.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x264.h; sourceTree = "<group>"; };
+		0F64E8D71FBD6DC000842B9B /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libx264.a; sourceTree = "<group>"; };
 		0FA2A07F1E6537C900F1617D /* FFmpegMain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFmpegMain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA2A0941E65383500F1617D /* FFmpegMain copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FFmpegMain copy-Info.plist"; path = "/Users/yyf/work/code/FFmpegMain/FFmpegMain copy-Info.plist"; sourceTree = "<absolute>"; };
 		0FA2A0961E6538A500F1617D /* FFmpegMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFmpegMain.h; sourceTree = "<group>"; };
@@ -298,7 +306,9 @@
 				0FA2A1D61E653FEB00F1617D /* AVFoundation.framework in Frameworks */,
 				0FA2A1D41E653FD900F1617D /* CoreMedia.framework in Frameworks */,
 				0FA2A1D21E653FD400F1617D /* AudioToolbox.framework in Frameworks */,
+				0F64E8D11FBD6A5600842B9B /* libpostproc.a in Frameworks */,
 				0FA2A1D01E653FCD00F1617D /* VideoToolbox.framework in Frameworks */,
+				0F64E8DA1FBD6DC000842B9B /* libx264.a in Frameworks */,
 				0FA2A1CE1E653FC400F1617D /* libiconv.tbd in Frameworks */,
 				0FA2A1CC1E653FA300F1617D /* libbz2.tbd in Frameworks */,
 				0FA2A1CA1E653F9B00F1617D /* libz.tbd in Frameworks */,
@@ -315,6 +325,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F64E8D21FBD6DC000842B9B /* x264 */ = {
+			isa = PBXGroup;
+			children = (
+				0F64E8D31FBD6DC000842B9B /* include */,
+				0F64E8D61FBD6DC000842B9B /* lib */,
+			);
+			path = x264;
+			sourceTree = "<group>";
+		};
+		0F64E8D31FBD6DC000842B9B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0F64E8D41FBD6DC000842B9B /* x264_config.h */,
+				0F64E8D51FBD6DC000842B9B /* x264.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0F64E8D61FBD6DC000842B9B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0F64E8D71FBD6DC000842B9B /* libx264.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		0FA2A0751E6537C900F1617D = {
 			isa = PBXGroup;
 			children = (
@@ -336,6 +372,7 @@
 		0FA2A0951E6538A500F1617D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0F64E8D21FBD6DC000842B9B /* x264 */,
 				0FA2A09A1E6539E500F1617D /* FFmpeg-iOS */,
 				0FA2A1141E6539E500F1617D /* Main */,
 				0FA2A0961E6538A500F1617D /* FFmpegMain.h */,
@@ -530,6 +567,7 @@
 		0FA2A10C1E6539E500F1617D /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				0F64E8D01FBD6A5600842B9B /* libpostproc.a */,
 				0FA2A10D1E6539E500F1617D /* libavcodec.a */,
 				0FA2A10E1E6539E500F1617D /* libavdevice.a */,
 				0FA2A10F1E6539E500F1617D /* libavfilter.a */,
@@ -636,6 +674,7 @@
 				0FA2A14A1E6539E500F1617D /* common.h in Headers */,
 				0FA2A17B1E6539E500F1617D /* threadmessage.h in Headers */,
 				0FA2A14B1E6539E500F1617D /* cpu.h in Headers */,
+				0F64E8D91FBD6DC000842B9B /* x264.h in Headers */,
 				0FA2A12D1E6539E500F1617D /* vorbis_parser.h in Headers */,
 				0FA2A16A1E6539E500F1617D /* motion_vector.h in Headers */,
 				0FA2A1581E6539E500F1617D /* hmac.h in Headers */,
@@ -661,6 +700,7 @@
 				0FA2A14D1E6539E500F1617D /* des.h in Headers */,
 				0FA2A14E1E6539E500F1617D /* dict.h in Headers */,
 				0FA2A16E1E6539E500F1617D /* pixdesc.h in Headers */,
+				0F64E8D81FBD6DC000842B9B /* x264_config.h in Headers */,
 				0FA2A1631E6539E500F1617D /* log.h in Headers */,
 				0FA2A12F1E6539E500F1617D /* avdevice.h in Headers */,
 				0FA2A1501E6539E500F1617D /* downmix_info.h in Headers */,
@@ -896,7 +936,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Sources/FFmpeg-iOS/include";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -905,6 +945,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sources/FFmpeg-iOS/lib",
+					"$(PROJECT_DIR)/Sources/x264/lib",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.leo.FFmpegMain;
@@ -925,7 +966,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Sources/FFmpeg-iOS/include";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -934,6 +975,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sources/FFmpeg-iOS/lib",
+					"$(PROJECT_DIR)/Sources/x264/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leo.FFmpegMain;
 				PRODUCT_NAME = "$(TARGET_NAME)";

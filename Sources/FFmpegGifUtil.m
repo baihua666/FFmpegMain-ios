@@ -31,7 +31,7 @@
 //视频转GIF，图片质量低，文件体积小
 + (void) video: (NSString*) videoPath toQualityLowGif: (NSString*)gifPath imageWidth: (int)width framesPerSecond: (int)frames maxDuration: (int) duration {
     NSArray * cmdArray = @[@"ffmpeg", @"-t", [NSString stringWithFormat:@"%d", duration], @"-i", videoPath, @"-vf", [NSString stringWithFormat:@"fps=%d,scale=%d:-1:flags=lanczos", frames, width], @"-gifflags", @"-transdiff", @"-y", gifPath];
-    [FFmpegCMD cmdprocess:cmdArray];
+    [[FFmpegCMD shared] cmdprocess:cmdArray];
 }
 
 //视频转GIF，图片质量高，文件体积大
@@ -40,10 +40,10 @@
     NSString *paletteFilePath = [dir stringByAppendingPathComponent:@"palette.png"];
     
     NSArray * paletteCmdArray = @[@"ffmpeg", @"-t", [NSString stringWithFormat:@"%d", duration], @"-i", videoPath, @"-vf", [NSString stringWithFormat:@"fps=%d,scale=%d:-1:flags=lanczos,palettegen", frames, width], @"-y", paletteFilePath];
-    [FFmpegCMD cmdprocess:paletteCmdArray];
+    [[FFmpegCMD shared] cmdprocess:paletteCmdArray];
     
     NSArray * convertCmdArray = @[@"ffmpeg", @"-t", [NSString stringWithFormat:@"%d", duration], @"-i", videoPath, @"-i", paletteFilePath, @"-filter_complex", [NSString stringWithFormat:@"fps=%d,scale=%d:-1:flags=lanczos[x];[x][1:v]paletteuse", frames, width], @"-y", gifPath];
-    [FFmpegCMD cmdprocess:convertCmdArray];
+    [[FFmpegCMD shared] cmdprocess:convertCmdArray];
 }
 
 //视频转GIF，指定参数
