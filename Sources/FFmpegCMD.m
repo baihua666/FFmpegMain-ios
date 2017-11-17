@@ -65,7 +65,7 @@
     if (self.progressBlock == nil) {
         return;
     }
-    NSLog(@"onLogCallback,%d,%@", level, msg);
+//    NSLog(@"onLogCallback,%d,%@", level, msg);
     NSString *pattern = @"frame=(\\s*)(\\d+)";
     NSError *error = nil;
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:&error];
