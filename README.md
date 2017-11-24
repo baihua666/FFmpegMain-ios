@@ -3,6 +3,7 @@
 change ffmpeg cmd code to interface for iso, use ffmpeg as a cmd tool.
 ffmpeg version 3.4 with libx264
 add custom configure mp4 to gif reduce lib file size
+objective-c and swift support
 
 cmd example 
 
