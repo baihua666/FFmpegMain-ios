@@ -27,6 +27,10 @@ video to gif example
     }
     
  
+    ffmpeg build
+    https://github.com/kewlbear/FFmpeg-iOS-build-script
     
+    x264 build
+    https://github.com/kewlbear/x264-ios
 
 
