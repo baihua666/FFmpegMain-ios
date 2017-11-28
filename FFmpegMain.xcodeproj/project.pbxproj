@@ -156,7 +156,6 @@
 		0F64E8D51FBD6DC000842B9B /* x264.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x264.h; sourceTree = "<group>"; };
 		0F64E8D71FBD6DC000842B9B /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libx264.a; sourceTree = "<group>"; };
 		0FA2A07F1E6537C900F1617D /* FFmpegMain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFmpegMain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FA2A0941E65383500F1617D /* FFmpegMain copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FFmpegMain copy-Info.plist"; path = "/Users/yyf/work/code/FFmpegMain/FFmpegMain copy-Info.plist"; sourceTree = "<absolute>"; };
 		0FA2A0961E6538A500F1617D /* FFmpegMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFmpegMain.h; sourceTree = "<group>"; };
 		0FA2A0971E6538A500F1617D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FA2A09D1E6539E500F1617D /* avcodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avcodec.h; sourceTree = "<group>"; };
@@ -356,7 +355,6 @@
 			children = (
 				0FA2A0951E6538A500F1617D /* Sources */,
 				0FA2A0801E6537C900F1617D /* Products */,
-				0FA2A0941E65383500F1617D /* FFmpegMain copy-Info.plist */,
 				0FA2A1C81E653F9B00F1617D /* Frameworks */,
 			);
 			sourceTree = "<group>";

@@ -59,6 +59,7 @@
         free(argv[i]);
     }
     free(argv);
+    self.progressBlock = nil;
 }
 
 - (void) onLogCallback:(void *)ptr level: (int) level msg: (NSString *)msg {
