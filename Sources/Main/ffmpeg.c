@@ -600,6 +600,8 @@ static void ffmpeg_cleanup(int ret)
     nb_output_streams=0;
     nb_input_files=0;
     nb_input_streams=0;
+    received_sigterm = 0;
+    received_nb_signals = 0;
 }
 
 void remove_avoptions(AVDictionary **a, AVDictionary *b)
@@ -1864,6 +1866,11 @@ static void flush_encoders(void)
 
             if (stop_encoding)
                 break;
+            
+            //change by tb
+            if (received_sigterm) {
+                break;
+            }
         }
     }
 }
@@ -4541,6 +4548,12 @@ static int64_t getmaxrss(void)
 
 static void log_callback_null(void *ptr, int level, const char *fmt, va_list vl)
 {
+}
+
+//change by tb, for ios
+void ffmpeg_main_interrupt()
+{
+    sigterm_handler(SIGINT);
 }
 
 //change by tb, for ios

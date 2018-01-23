@@ -613,7 +613,8 @@ int vaapi_device_init(const char *device);
 int cuvid_init(AVCodecContext *s);
 int cuvid_transcode_init(OutputStream *ost);
 
-
+//change by tb, for ios
+void ffmpeg_main_interrupt();
 int ffmpeg_main(int argc, char **argv);
 
 #endif /* FFMPEG_H */

@@ -14,8 +14,11 @@ typedef void (^ProgressBlock)(int frameIndex);
 
 
 @property (copy, nullable) ProgressBlock progressBlock;
+@property (assign, nonatomic) BOOL isProcessing;
 
 + (instancetype _Nonnull )shared;
+
+- (void) interruptCMDProcess;
 
 - (void) cmdprocess: (NSArray*_Nonnull) argvArray;
 - (void) cmdprocess: (NSArray*_Nonnull) argvArray progress: (ProgressBlock _Nullable ) handler;

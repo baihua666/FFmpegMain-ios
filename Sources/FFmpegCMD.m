@@ -42,7 +42,16 @@
     [self cmdprocess:argvArray progress:nil];
 }
 
+- (void) interruptCMDProcess {
+    if (!self.isProcessing) {
+        return;
+    }
+    ffmpeg_main_interrupt();
+    self.isProcessing = NO;
+}
+
 - (void) cmdprocess: (NSArray*_Nonnull) argvArray progress: (ProgressBlock _Nullable ) handler {
+    self.isProcessing = YES;
     self.progressBlock = handler;
     int argc = (int)argvArray.count;
     char** argv=(char**)malloc(sizeof(char*)*argc);
@@ -60,6 +69,8 @@
     }
     free(argv);
     self.progressBlock = nil;
+    
+    self.isProcessing = NO;
 }
 
 - (void) onLogCallback:(void *)ptr level: (int) level msg: (NSString *)msg {
